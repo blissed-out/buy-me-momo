@@ -1,19 +1,34 @@
 "use client"
 import React, { useState } from "react";
+import Image from 'next/image';
 
 const Username = ({ params }) => {
 
-  
+    const [amt, setAmt] = useState("");
 
   return (
     <>
 
-      <div className="cover w-full h-[325]] relative">
+    <div className="cover w-full h-[325] relative">
 
-        <img className='object-cover' src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4842667/452146dcfeb04f38853368f554aadde1/eyJ3IjoxOTIwLCJ3ZSI6MX0%3D/16.gif?token-time=1730678400&token-hash=AcvAVf7vmSGx4pf49nRRBMUYRnDjWDSx2BGTxvUbw-U%3D" alt="" />
+        <Image
+        className='object-cover w-full h-full'
+        src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4842667/452146dcfeb04f38853368f554aadde1/eyJ3IjoxOTIwLCJ3ZSI6MX0%3D/16.gif?token-time=1730678400&token-hash=AcvAVf7vmSGx4pf49nRRBMUYRnDjWDSx2BGTxvUbw-U%3D"
+        alt=""
+        width={1920}
+        height={325}
+        priority
+        />
 
         <div className="profile absolute top-80 right-[45%] border-2 border-white rounded-full">
-          <img className='w-32 h-32 rounded-full' src="https://images.unsplash.com/photo-1729017256081-0271b3fcc08e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <Image
+        className='w-32 h-32 rounded-full'
+        src="https://images.unsplash.com/photo-1729017256081-0271b3fcc08e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        width={128}
+        height={128}
+        priority
+        />
         </div>
         <div className='info my-24 flex flex-col gap-2 justify-center items-center'>
 
@@ -39,15 +54,15 @@ const Username = ({ params }) => {
 
           <h2 className='font-bold text-lg'>Supporters</h2>
           <ul className='my-5 mx-2'>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
-            <li className='my-2'>Shovit Shrestha donated $400k with a message "nice"</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
+            <li className='my-2'>Shovit Shrestha donated $400k with a message &quot;nice&quot;</li>
           </ul>
 
         </div>

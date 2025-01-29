@@ -5,11 +5,12 @@ import Github from 'next-auth/providers/github';
 import { useRouter } from 'next/navigation';
 
 
-const login = () => {
-    const { data:session } = useSession()
-    if (session){
-        const router = useRouter();
-        router.push("/dashboard")
+const Login = () => {
+    const { data:session } = useSession();
+    const router = useRouter();
+    
+    if (session) {
+        router.push("/dashboard");
     }
     return (
         <>
@@ -139,4 +140,4 @@ const login = () => {
     )
 }
 
-export default login
+export default Login
