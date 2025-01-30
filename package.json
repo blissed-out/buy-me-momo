@@ -9,9 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "esewa-integration-server": "^2.2.8",
     "mongoose": "^8.7.3",
-    "next": "14.2.15",
+    "next": "^14.2.23",
     "next-auth": "^4.24.8",
     "react": "^18",
     "react-dom": "^18"
